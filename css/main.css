@@ -807,6 +807,11 @@ video {
   padding: 1.5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -936,7 +941,6 @@ body {
   height: clamp(25em, 40vw, 40em);
   z-index: -1;
   animation: scale-in-center 1s ease-in-out;
-  /* animation-delay: .8s; */
 }
 
 .header {
@@ -997,7 +1001,7 @@ body {
 
 @keyframes slide-in-right {
   0% {
-    transform: translateX(1000px);
+    transform: translateX(300px);
     opacity: 0;
   }
 
@@ -1010,12 +1014,12 @@ body {
 @keyframes scale-in-center {
   0% {
     transform: scale(0);
-    opacity: 0;
+    visibility: hidden;
   }
 
   100% {
     transform: scale(1);
-    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -1058,7 +1062,7 @@ body {
   opacity: 1;
 }
 
-.reveal1{
+.reveal1 {
   opacity: 0;
 }
 
@@ -1066,7 +1070,7 @@ body {
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.reveal2{
+.reveal2 {
   opacity: 0;
 }
 
@@ -1183,6 +1187,10 @@ body {
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
   }
 
   .md\:py-1 {
